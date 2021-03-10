@@ -1,5 +1,5 @@
 
-#First Python Project: Antipode Searcher
+# First Python Project: Antipode Searcher
 
 As part of "The Complete Python Course" by Ardit Sulce, this is the first project which is used to teach the basic syntax of Python. 
 

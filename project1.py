@@ -3,7 +3,7 @@ from folium import Map, Marker
 
 latitude = float("40.09")
 longitude = float("-3.47")
-
+tool_tip = str("Click Me!!")
 
 antipode_latitude = latitude.__mul__(int("-1"))
 
@@ -17,8 +17,8 @@ elif longitude.__gt__(float("180")) or longitude.__lt__(float("-180")):
 else:
     antipode_longitude = longitude.__sub__(float("180"))
 location = list((antipode_latitude, antipode_longitude))
-mymap = Map(location)
-Marker(location, popup=str("<i>My Antipode</i>")).add_to(mymap)
+mymap = Map(location,tiles="Stamen Terrain")
+Marker(location, popup=str(f"<i>My Antipode: Latitude {antipode_latitude} Longitude {antipode_longitude} </i>"), tooltip=tool_tip).add_to(mymap)
 
 mymap.save(str("antipode.html"))
 

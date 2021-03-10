@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_596b7f3374c544b5942cfffd913c5789 {
+                #map_2ca98101a92343389774271822d7846e {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,13 +35,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_596b7f3374c544b5942cfffd913c5789" ></div>
+            <div class="folium-map" id="map_2ca98101a92343389774271822d7846e" ></div>
         
 </body>
 <script>    
     
-            var map_596b7f3374c544b5942cfffd913c5789 = L.map(
-                "map_596b7f3374c544b5942cfffd913c5789",
+            var map_2ca98101a92343389774271822d7846e = L.map(
+                "map_2ca98101a92343389774271822d7846e",
                 {
                     center: [-40.09, 176.53],
                     crs: L.CRS.EPSG3857,
@@ -55,28 +55,36 @@
 
         
     
-            var tile_layer_114f69797dcd4d08b03ffe333210e9d4 = L.tileLayer(
-                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_596b7f3374c544b5942cfffd913c5789);
+            var tile_layer_9feb6f501d104d789b28a3ec2412ce06 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2ca98101a92343389774271822d7846e);
         
     
-            var marker_b0d874e1b16d4a6db43b7e34215ff16c = L.marker(
+            var marker_7e85e536d2b3416d951417f80e5e245f = L.marker(
                 [-40.09, 176.53],
                 {}
-            ).addTo(map_596b7f3374c544b5942cfffd913c5789);
+            ).addTo(map_2ca98101a92343389774271822d7846e);
         
     
-        var popup_aea4fd120c644977b1de7663c6409c3f = L.popup({"maxWidth": "100%"});
+        var popup_1275b478e72c4160bab1eee82eb03bdb = L.popup({"maxWidth": "100%"});
 
         
-            var html_04da81fce3994f49b5aa57e1b3ca2015 = $(`<div id="html_04da81fce3994f49b5aa57e1b3ca2015" style="width: 100.0%; height: 100.0%;"><i>My Antipode</i></div>`)[0];
-            popup_aea4fd120c644977b1de7663c6409c3f.setContent(html_04da81fce3994f49b5aa57e1b3ca2015);
+            var html_9b8712f362f84ecf875a14167befc2e3 = $(`<div id="html_9b8712f362f84ecf875a14167befc2e3" style="width: 100.0%; height: 100.0%;"><i>My Antipode: Latitude -40.09 Longitude 176.53 </i></div>`)[0];
+            popup_1275b478e72c4160bab1eee82eb03bdb.setContent(html_9b8712f362f84ecf875a14167befc2e3);
         
 
-        marker_b0d874e1b16d4a6db43b7e34215ff16c.bindPopup(popup_aea4fd120c644977b1de7663c6409c3f)
+        marker_7e85e536d2b3416d951417f80e5e245f.bindPopup(popup_1275b478e72c4160bab1eee82eb03bdb)
         ;
 
         
     
+    
+            marker_7e85e536d2b3416d951417f80e5e245f.bindTooltip(
+                `<div>
+                     Click Me!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
 </script>

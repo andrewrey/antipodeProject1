@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_dc8e4f67801e44579459a268e67735bc {
+                #map_a376cf51a0aa486d87a0a6bf252aad3c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,15 +35,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_dc8e4f67801e44579459a268e67735bc" ></div>
+            <div class="folium-map" id="map_a376cf51a0aa486d87a0a6bf252aad3c" ></div>
         
 </body>
 <script>    
     
-            var map_dc8e4f67801e44579459a268e67735bc = L.map(
-                "map_dc8e4f67801e44579459a268e67735bc",
+            var map_a376cf51a0aa486d87a0a6bf252aad3c = L.map(
+                "map_a376cf51a0aa486d87a0a6bf252aad3c",
                 {
-                    center: [-40.09, 176.53],
+                    center: [-22.32, -65.83],
                     crs: L.CRS.EPSG3857,
                     zoom: 10,
                     zoomControl: true,
@@ -55,34 +55,67 @@
 
         
     
-            var tile_layer_f7168c384d6948c9a261f4b25dc0327b = L.tileLayer(
+            var tile_layer_5e9d56f6919c470eb4d72cf0c5c3f4d2 = L.tileLayer(
                 "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
                 {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_dc8e4f67801e44579459a268e67735bc);
+            ).addTo(map_a376cf51a0aa486d87a0a6bf252aad3c);
         
     
-            var marker_1697b7ac80cc47ba8586c0f472238468 = L.marker(
-                [-40.09, 176.53],
+            var marker_dd323e153aad49f59ab911858c2ea8eb = L.marker(
+                [-22.32, -65.83],
                 {}
-            ).addTo(map_dc8e4f67801e44579459a268e67735bc);
+            ).addTo(map_a376cf51a0aa486d87a0a6bf252aad3c);
         
     
-        var popup_88f32ed198d746bb90b199c9d0753c16 = L.popup({"maxWidth": "100%"});
+        var popup_d332148947894fc09f2c92564605ea2f = L.popup({"maxWidth": "100%"});
 
         
-            var html_34e6ef8d32764a31b99df0bb30b177ec = $(`<div id="html_34e6ef8d32764a31b99df0bb30b177ec" style="width: 100.0%; height: 100.0%;"><i>My Antipode: Latitude -40.09 Longitude 176.53 </i></div>`)[0];
-            popup_88f32ed198d746bb90b199c9d0753c16.setContent(html_34e6ef8d32764a31b99df0bb30b177ec);
+            var html_0a48d9f82f244f5597cd6da6706c9729 = $(`<div id="html_0a48d9f82f244f5597cd6da6706c9729" style="width: 100.0%; height: 100.0%;"><i>My Antipode: Latitude -22.32 Longitude -65.83 </i></div>`)[0];
+            popup_d332148947894fc09f2c92564605ea2f.setContent(html_0a48d9f82f244f5597cd6da6706c9729);
         
 
-        marker_1697b7ac80cc47ba8586c0f472238468.bindPopup(popup_88f32ed198d746bb90b199c9d0753c16)
+        marker_dd323e153aad49f59ab911858c2ea8eb.bindPopup(popup_d332148947894fc09f2c92564605ea2f)
         ;
 
         
     
     
-            marker_1697b7ac80cc47ba8586c0f472238468.bindTooltip(
+            marker_dd323e153aad49f59ab911858c2ea8eb.bindTooltip(
                 `<div>
                      Click Me!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f5253a774b9494686e55a066d963d7f = L.marker(
+                [22.32, 114.17],
+                {}
+            ).addTo(map_a376cf51a0aa486d87a0a6bf252aad3c);
+        
+    
+            var icon_bc176b721aa54f6e98dfd2ffd368c0f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0f5253a774b9494686e55a066d963d7f.setIcon(icon_bc176b721aa54f6e98dfd2ffd368c0f8);
+        
+    
+        var popup_8c222c098ab54f18a8ab0de2677bcde9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42d0bf48a8a6415185fa79cc53d5a288 = $(`<div id="html_42d0bf48a8a6415185fa79cc53d5a288" style="width: 100.0%; height: 100.0%;"><i>Starting Point:Latitude 22.32, Longitude 114.17</i></div>`)[0];
+            popup_8c222c098ab54f18a8ab0de2677bcde9.setContent(html_42d0bf48a8a6415185fa79cc53d5a288);
+        
+
+        marker_0f5253a774b9494686e55a066d963d7f.bindPopup(popup_8c222c098ab54f18a8ab0de2677bcde9)
+        ;
+
+        
+    
+    
+            marker_0f5253a774b9494686e55a066d963d7f.bindTooltip(
+                `<div>
+                     Starting Point!!
                  </div>`,
                 {"sticky": true}
             );

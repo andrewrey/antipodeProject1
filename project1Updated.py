@@ -1,4 +1,5 @@
 from folium import Map, Marker
+from geo import Geopoint
  
 # Get Latitude and Longitude. As well set the tool tip message.
 latitude = 40.09
@@ -28,8 +29,10 @@ Marker(location, popup=f"<i>My Antipode: Latitude {antipode_latitude} Longitude 
 # Save map to file
 mymap.save("antipode2.html")
 
+mypoint = Geopoint(41.2, 4.1)
+print(mypoint.closest_parallel())
+print(mypoint.latitude)
+
 
 print(antipode_latitude, antipode_longitude)
 print(mymap)
-
-

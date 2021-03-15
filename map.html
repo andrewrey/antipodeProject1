@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_38059ab1ddd340929af27fe6f31902f2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_38059ab1ddd340929af27fe6f31902f2" ></div>
+        
+</body>
+<script>    
+    
+            var map_38059ab1ddd340929af27fe6f31902f2 = L.map(
+                "map_38059ab1ddd340929af27fe6f31902f2",
+                {
+                    center: [40.4, -3.7],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2e18b992d392459485693afeb84dee9e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_38059ab1ddd340929af27fe6f31902f2);
+        
+    
+            var marker_24d7d045ee17451193ebcadebdfe54db = L.marker(
+                [40.4, -3.7],
+                {}
+            ).addTo(map_38059ab1ddd340929af27fe6f31902f2);
+        
+    
+            var icon_8357222def5648d5a1475729d41ac25d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_24d7d045ee17451193ebcadebdfe54db.setIcon(icon_8357222def5648d5a1475729d41ac25d);
+        
+    
+        var popup_caa4796cb3b647cfa4a1155b7ab7c0da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca2d3ae051db446286f31879c624b480 = $(`<div id="html_ca2d3ae051db446286f31879c624b480" style="width: 100.0%; height: 100.0%;"><i style='color: blue'>I'm here!!</i></div>`)[0];
+            popup_caa4796cb3b647cfa4a1155b7ab7c0da.setContent(html_ca2d3ae051db446286f31879c624b480);
+        
+
+        marker_24d7d045ee17451193ebcadebdfe54db.bindPopup(popup_caa4796cb3b647cfa4a1155b7ab7c0da)
+        ;
+
+        
+    
+</script>

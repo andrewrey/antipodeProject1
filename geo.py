@@ -10,8 +10,8 @@ class Geopoint(Marker):
     latitude_range = (90,-90)
     longitude_range = (180, -180)
     
-    def __init__(self,latitude, longitude, popup=None):
-        super().__init__(location=[latitude, longitude], popup=popup)
+    def __init__(self,latitude, longitude):
+        super().__init__(location=[latitude, longitude])
         self.latitude = latitude
         self.longitude = longitude
         

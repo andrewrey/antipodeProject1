@@ -12,7 +12,7 @@ mymap = Map(location = [latitude, longitude])
 
 # Create a Geopoint instance
 geopoint = Geopoint(latitude, longitude)
-pop_up = Popup(html="{}".format(geopoint.get_weather()))
+pop_up = Popup(html='<h2 style="color:blue">{}</h2>'.format(geopoint.get_weather()[0][2]))
 pop_up.add_to(geopoint)
 geopoint.add_to(mymap)
                     

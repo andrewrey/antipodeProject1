@@ -8,6 +8,7 @@ longitude = -3.7
 
 # Create a Geopoint instance
 geopoint = Geopoint(latitude, longitude)
+
 #Folium Map instance
 mymap = Map(location = [latitude, longitude])
 

@@ -4,12 +4,14 @@ from timezonefinder import TimezoneFinder
 from sunnyday import Weather
 from config import api_key
 from random import uniform
+from folium import Marker
 
-class Geopoint:
+class Geopoint(Marker):
     latitude_range = (90,-90)
     longitude_range = (180, -180)
     
-    def __init__(self,latitude, longitude):
+    def __init__(self,latitude, longitude, popup=None):
+        super().__init__(location=[latitude, longitude], popup=popup)
         self.latitude = latitude
         self.longitude = longitude
         
@@ -32,12 +34,3 @@ class Geopoint:
     
     
         
-        
-van = Geopoint(49.28, -123.12)
-random_point = Geopoint.get_random()
-print(random_point)
-
-print(van.closest_parallel())
-
-print(van.get_time())
-print(van.get_weather())
